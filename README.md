@@ -2,6 +2,8 @@
 Enumeration Techniques
 
 # Explore Google hacking and enumeration 
+NAME : GURU PRASATH R 
+REG NO: 212223040053
 
 # AIM:
 
@@ -33,21 +35,43 @@ Google hacking, also known as Google dorking, is a technique that involves using
 site: This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
 Following searches for all the sites that is in the domain yahoo.com
 
+## Output:
+![Screenshot 2024-09-25 134445](https://github.com/user-attachments/assets/5a52717a-e8b7-4624-b095-147fc3b8e72d)
+
+
+
 filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
 Following searches for pdf file in the domain yahoo.com
+## Output:
+![Screenshot 2024-09-25 134639](https://github.com/user-attachments/assets/08ce32de-c1ad-429c-8497-63973f4acdc9)
+
 
 
 
 intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+## Output:
+![Screenshot 2024-09-25 134744](https://github.com/user-attachments/assets/d9662994-4363-43a8-8066-6432274dd1cc)
+
 
 
 inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
+## Output:
+![Screenshot 2024-09-25 134822](https://github.com/user-attachments/assets/6fdbce7d-3b6a-4524-bf6a-9624e47612ae)
+
 
 intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
+## Output:
+![Screenshot 2024-09-25 134856](https://github.com/user-attachments/assets/dbb55d3b-868d-44c5-a793-bdb4d18d6498)
+
 
 link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
+## Output:
+![Screenshot 2024-09-25 134930](https://github.com/user-attachments/assets/b3bcf3e2-647c-4ffa-a4de-6d72cd9c6be8)
+
 
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
+## Output:
+![Screenshot 2024-09-25 135127](https://github.com/user-attachments/assets/014d2a82-f1cd-4be7-9459-a8cae66bd90e)
 
  
 #DNS Enumeration
@@ -60,6 +84,7 @@ Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TX
 Perform common SRV Record Enumeration
 Top level domain expansion
 ## OUTPUT:
+![Screenshot 2024-09-25 135658](https://github.com/user-attachments/assets/eedb2a9a-ae3d-46d7-a593-1300e05b1c3c)
 
 
 
@@ -67,7 +92,7 @@ Top level domain expansion
 
 
 
-##dnsenum
+## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
 Get the host’s addresses (A record).
@@ -80,23 +105,35 @@ Calculate C class domain network ranges and perform whois queries on them (threa
 Perform reverse lookups on netranges (C class or/and whois netranges) (threaded).
 Write to domain_ips.txt file ip-blocks.
 This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
+## Output:
+![Screenshot 2024-09-25 135724](https://github.com/user-attachments/assets/a782db66-c5b4-478d-b89e-55c441b1169e)
+![Screenshot 2024-09-25 135748](https://github.com/user-attachments/assets/fde593e4-bec2-4ccf-bcf0-5bb35b0617bf)
+![Screenshot 2024-09-25 135811](https://github.com/user-attachments/assets/4c02a293-376b-4d89-9927-7f7286082efd)
 
 
-##smtp-user-enum
+
+
+
+## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
 
 
 In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 
 select any username in the first column of the above file and check the same
+## Output:
+![Screenshot 2024-09-25 135843](https://github.com/user-attachments/assets/85e3dd75-8460-4160-a774-5f8084c5c0c6)
 
 
-#Telnet for smtp enumeration
+
+## Telnet for smtp enumeration
 Telnet allows to connect to remote host based on the port no. For smtp port no is 25
 telnet <host address> 25 to connect
 and issue appropriate commands
   
- ##Output
+ ## Output:
+ ![Screenshot 2024-09-25 135926](https://github.com/user-attachments/assets/32e136e4-a96c-42b3-b48b-cd5d07ec25f7)
+
   
   
 
@@ -106,6 +143,7 @@ The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server 
 
 
 ## OUTPUT:
+![Screenshot 2024-09-25 135958](https://github.com/user-attachments/assets/81712074-51c9-4f67-97f0-eb3eaf5e0fc9)
 
 
 ## RESULT:
